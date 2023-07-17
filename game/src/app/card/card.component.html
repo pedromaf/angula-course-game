@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="columns is-centered">
+        <div class="box column is-one-third">
+            <h1 class="title has-text-centered">{{title}}</h1>
+            <div class="has-text-centered">
+                <span [class]="getLetterClass(letter, i)" *ngFor="let letter of text.split(''); let i = index;">{{letter}}</span>
+            </div>
+            <div class="field">
+                <input class="input" (input)="onInput($event)">
+            </div>
+            <div class="box has-text-centered" *ngIf="success">
+                <h1 class="title">Success!</h1>
+            </div>
+        </div>
+    </div>
+</div>

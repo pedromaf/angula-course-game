@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "faker": "^5.5.3"
+  }
+}
